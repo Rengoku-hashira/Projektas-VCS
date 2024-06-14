@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-LSOgfABZQo6PL4zLYosuZRRV+83kePVHODi+EL0XtK1C2eFfZtJvFqz6kOmUtnn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-LSO/gfABZQo6PL4zLYosuZRRV+83kePVHODi+EL0XtK1C2eFfZtJvFqz6kOmUtnn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-LSO/gfABZQo6PL4zLYosuZRRV+83kePVHODi+EL0XtK1C2eFfZtJvFqz6kOmUtnn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-LSO/gfABZQo6PL4zLYosuZRRV+83kePVHODi+EL0XtK1C2eFfZtJvFqz6kOmUtnn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-LSO/gfABZQo6PL4zLYosuZRRV+83kePVHODi+EL0XtK1C2eFfZtJvFqz6kOmUtnn" crossorigin="anonymous">
+    <link rel="stylesheet" href="carshow.css">
+
+    <title>TuningShowVilnius</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="bar">
+        <input id="search-input" type="text" placeholder="Paieška">
+        <i class="fas fa-search search-icon" id="search-icon"></i>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram" style="color: rgb(247, 6, 219)"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook" style="color: rgb(22, 14, 172)"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube" style="color: red"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter" style="color: rgb(134, 141, 244)"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin" style="color: rgb(61, 61, 232)"></i>
+        </a>
+    </div>
+    <button onclick="showPage('past-events-page')">ANKSTESNI RENGINIAI</button>
+    <h5>KONTAKTAI</h5>
+</div>
+
+<div class="timer">
+    <div class="circle" onclick="goToHomePage()">
+        <img src="images/car-icon.png" alt="icon">
+    </div>
+    <h1 style="margin-left: 200px;">IKI RENGINIO LIKO:</h1>
+    <div id="timer"></div>
+</div>
+
+<div class="navigation-container">
+    <nav class="navigation">
+        <button onclick="showPage('register-page')">REGISTRACIJA</button>
+        <button onclick="showPage('program-page')">PROGRAMA</button>
+        <button onclick="showPage('location-page')">KAIP MUS RASTI?</button>
+    </nav>
+</div>
+
+<div id="home-page" class="pages show">
+    <div class="introduction">
+        <img src="images/transparent-background-images/porche911-transformed.png" alt="porche911">
+        <img class="bmw" src="images/transparent-background-images/m3-transformed.png" alt="bmw">
+        <h3>VIENAS DIDŽIAUSIŲ MODIFIKUOTŲ AUTOMOBILIŲ RENGINYS</h3>
+        <p class="Discription"><b>Automobilius bei jų mylėtojus sieja sena draugystė! Atėjo laikas dar kartą įrodyti, koks stiprus ir ypatingas tai ryšys! Mūsų komanda kartu su partneriais ruošia įspūdingą renginį ir nori visus automobilių fanus pakviesti į XXXX CAR SHOW 2024. Susitikime rugpjūčio 16 d. Vilniuje, Vingio parke! Renginio pradžia 11 val. XXXX pasistengs, kad šis renginys tiek jo dalyviams, tiek žiūrovams paliktų neišdildomus įspūdžius.
+            Tą proga XXXX į svečius pakvietė verslo partnerius, kurie atstovauja tokius prekių ženklus kaip „Bosch“, „Continental“, „Liqui Moly“, „Mann-Filter“, „Febi“ ir kt., tad iš arti galėsite pasigrožėti ne tik įvairių modifikacijų automobiliais, tačiau ir gyvai pabendrauti su autodetalių sektoriaus lyderiais.
+            Renginio generolas  XXX XXX, patekimas į renginį VISIŠKAI NEMOKAMAS  tai XXXX dovana visiems, kuriems automobilis nėra tik transporto priemonė, o kai kas šiek tiek daugiau.</b></p>
+    </div>
+
+    <div class="regis">
+        <h2>INFORMACIJA NORINTIEMS DALYVAUTI</h2>
+        <p class="inforeg">Ar verta dalyvauti? Tikrai taip! Jums tereikia užpildyti anketą ir laukti patvirtinimo iš kompetetingų žiuri narių. Kiekvienos kategorijos nugalėtojai pretenduos į įspūdingus prizus, bendra prizinio fondo vertė 3400 Eur! Spauskite registracijos mygtuką ir sužinokite dar daugiau verčių. Dalyvavimas nemokamas!</p>
+        <button class="registration" onclick="showPage('register-page')">Dalyvių registracija ></button>
+    </div>
+
+    <div class="slider-wrapper">
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/slider-images/pic1.png" class="slide" alt="mercv8">
+                <img src="images/slider-images/pic2.png" class="slide" alt="porche918">
+                <img src="images/slider-images/pic3.png" class="slide" alt="audi">
+                <img src="images/slider-images/pic4.png" class="slide" alt="ford">
+                <img src="images/slider-images/pic5.png" class="slide" alt="lambo">
+                <img src="images/slider-images/pic6.png" class="slide" alt="merc">
+            </div>
+        </div>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <div class="supporters">
+        <h1>Rėmėjai</h1>
+        <img src="images/supporters-list.png" alt="suplist">
+    </div>
+</div>
+
+
+<div id="register-page" class="pages hide">
+    <div class="regtitle"><h1>REGISTRACIJA</h1></div>
+    <div class="blankfill"><h1>DALYVIO ANKETA</h1></div>
+    <div class="someinfo">
+        <p>Šiais metais XXXX modifikuotų automobilių mylėtojus kviečia Liepos 27-ąją pasimatyti Klaipėdoje, Senojoje turgaus aikštėje, kur nugriaudės jau <br> trečius metus iš eilės organizuojamas XXXX CAR SHOW 2024. Tai ne tik puiki proga pademonstruoti savo išpuoselėtą automobilį, pabendrauti su <br>bendraminčiais, bet ir laimėti įspūdingus prizus!
+            <br>    KONKURSINĖ programa:
+            <br>    Geriausia variklio modifikacija Powered by WOLF – 500 EUR
+            <br>     Gražiausias automobilio salonas Powered by Tobis/Getz – 500 EUR
+            <br>     Gražiausias išorės tiuningas Powered by febi – 500 EUR
+            <br>     Įspūdingiausias XXXX CAR SHOW 2024 automobilis – 1000 EUR
+            <br>     PARODOMOJI programa:
+            <br>     Orinė pakaba Powered by Mann-filter – 300 EUR
+            <br>     Griausmingiausia automobilio išmetimo sistema Powered by Liqui Moly – 300 EUR
+            <br>    Geriausia garso aparatūros instaliacija Powered by BOSCH – 300 EUR
+            <br>     Negana to, kiekvieno dalyvio lauks padėkos bei XXX partnerių įsteigtos dovanos. Renginio metu jus pavaišinsime nemokamais pietumis. <br> Susidomėjote? Pildykite apačioje pateiktą anketą ir laukite tolimesnių žinių. Su atrinktų automobilių savininkais bus susisiekta asmeniškai. <br> Primename – jokie dalyvio mokesčiai netaikomi.
+            <br> Pateikiama asmeninė informacija bus naudojama tik renginio organizavimo tikslais (komunikacijai su atrinktais dalyviais prieš ir renginio <br> metu). Duomenys rinkodaros tikslais nebus naudojami.</p>
+    </div>
+
+
+    <div class="success-message">
+        <p>Registracija sėkminga</p>
+    </div>
+    <div class="error-message">
+        <p>Registracija nepavyko. Bandykite dar kartą arba susisiekite su mūsų komanda</p>
+    </div>
+    <form id="register-form">
+        <div class="registration-form">
+            <input type="text" id="first-name" placeholder="Vardas*" required autocomplete="on">
+            <input type="text" id="last-name" placeholder="Pavarde*" required >
+            <input type="email" id="email" placeholder="El.paštas*" required autocomplete="on">
+            <input type="tel" id="phone-number" placeholder="Telefono numeris*" required>
+            <input type="text" id="car-manufacturer" placeholder="Automobilio markė*" required>
+            <input type="text" id="car-model" placeholder="Automobilio modelis*" required>
+            <input type="number" id="car-build-year" placeholder="Automobilio pagaminimo metai*" required minlength="4" maxlength="4">
+            <input type="number" id="car-engine-capacity" placeholder="Variklio darbinis tūris*" required>
+            <input type="number" id="car-engine-power-kw" placeholder="Variklio galia kilovatais*" required>
+            <input type="text" id="license-plate-number" placeholder="Valstybinis numeris*" required>
+            <div class="comments">
+                <input type="text" id="car-modifications"
+                       placeholder="Automobilio modifikaciju sąrašas ir išskirtinumai"
+                       required
+                >
+            </div>
+        </div>
+        <div class="register-button-container">
+            <button class="regiss">Dalyvių registracija ></button>
+        </div>
+    </form>
+</div>
+
+
+<div id="program-page" class="pages program-description hide">
+    <div class="program">PROGRAMA</div>
+    <div class="empty"></div>
+    <div class="program-info">
+       <br>11:00 – 11:30  XXX CAR SHOW 2024 atidarymas
+       <br>PARODOMOSIOS PROGRAMOS:
+       <br>11:30 – 12:30  Orinės pakabos rungtis Powered by MANN-FILTER
+       <br>13:00 – 14:00  Geriausia garso aparatūros instaliacija Powered by BOSCH
+       <br>14:30 – 15:30  Griausmingiausia automobilio išmetimo sistema Powered by LIQUI MOLY
+       <br>KONKURSINĖS PROGRAMOS APDOVANOJIMAI (15:45 – 16:00):
+       <br>Geriausia variklio modifikacija Powered by WOLF
+       <br>Gražiausias automobilio salonas Powered by TOBIS/GETZ
+       <br>Gražiausias išorės tiuningas Powered by FEBI
+       <br>Įspūdingiausias XXX CAR SHOW 2024 automobilis
+       <br>XXX CAR SHOW 2024 PRAMOGŲ ZONA (11:00 – 16:00):
+       <br>Tapk greičiausiu virtualiu lenktynininku ir laimėk puikius prizus (Lenktynių simuliatoriai)
+       <br>360° besisukanti kamera, užfiksuosianti nepakartojamus video jūsų socialiniams tinklams
+       <br>Mažieji savo fantazijas specialių dažų pagalba galės realizuoti ant tam parengtų XXX automobilių
+       <br>KITOS PRAMOGOS:
+       <br>11:00 – 16:00  XXX verslo partnerių palapinių miestelis: žaidimai, pramogos bei gausybė dovanų!
+       <br>11:00 – 16:00  Renginio zonoje nusipirkti gardžių pietų ar užkandžių kvies maisto furgonai
+    </div>
+</div>
+
+
+
+<div id="past-events-page" class="pages hide">
+    <div class="pastevent">
+        <h1>PRAEITI RENGININIAI</h1>
+    </div>
+    <div class="pastpics">
+        <img src="images/past-event-images/ev1.png" alt="interior">
+        <img src="images/past-event-images/ev2.png" alt="yelambo">
+        <img src="images/past-event-images/ev3.png" alt="tesla">
+        <img src="images/past-event-images/ev4.png" alt="tools">
+        <img src="images/past-event-images/ev5.png" alt="jeep">
+        <img src="images/past-event-images/ev6.png" alt="vwbus">
+        <img src="images/past-event-images/ev7.png" alt="wheel">
+        <img src="images/past-event-images/ev8.png" alt="mustang">
+        <img src="images/past-event-images/ev9.png" alt="group">
+        <img src="images/past-event-images/ev10.png" alt="greylambo">
+        <img src="images/past-event-images/ev11.png" alt="reno">
+        <img src="images/past-event-images/ev12.png" alt="mclaren">
+    </div>
+</div>
+
+<div id="location-page" class="pages hide">
+    <div class="location">
+        <div class="findus">
+            <h1>KAIP MUS RASTI</h1>
+        </div>
+        <div class="map">
+            <h4 style="margin-right: 350px;">Adresas: Maksimiškių g. 5, 02300 Vilnius, automobilių aikštelė</h4>
+            <img src="images/meet-location.png" alt="meetloc" class="location">
+        </div>
+    </div>
+</div>
+
+<div class="rights">
+    <p>Visos teises saugomos</p>
+</div>
+
+<script src="carshow.js"></script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+body {
+
+    background-color: rgb(57, 57, 57);
+    margin: 0;
+}
+
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 57, 57);
+    height: 50px;
+    color: white;
+}
+
+i {
+    padding: 10px;
+}
+
+h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(147, 15, 134);
+    border-radius: 25px;
+    background-color: rgb(147, 15, 134);
+    width: 180px;
+    padding: 10px;
+    padding-right: 40px;
+    height: 9px;
+    margin-right: 60px;
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+}
+
+#search-input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(147, 15, 134);
+    height: 150px;
+    color: white;
+    transition: box-shadow 0.2s;
+    box-shadow: 0px 0px 80px rgb(191, 20, 174);
+    border: 5px;
+    border-color: rgb(147, 15, 134);
+    margin-top: 20px;
+}
+
+
+.circle img {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(147, 15, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+
+.navigation-container {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    margin-top: 40px;
+}
+
+.navigation {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+
+.navigation button, .header button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.navigation button:hover, .header button:hover {
+    cursor: pointer;
+}
+
+.timer #timer {
+    font-size: 48px;
+    color: #fff;
+    background-color: #333;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: glow 2s infinite alternate;
+    margin-right: 300px;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+        0px 0px 20px rgba(255, 255, 255, 0.6),
+        0px 0px 30px rgba(255, 255, 255, 0.4),
+        0px 0px 40px rgba(255, 255, 255, 0.2),
+        0px 0px 50px rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+
+.introduction {
+    position: inherit;
+    height: 450px;
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    box-shadow: 0px, 0px, 20px;
+    margin-top: 40px;
+
+}
+
+
+h3, .Discription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    float: top;
+    font-size: 15px;
+    width: 50%;
+    font-family: inherit;
+    color: rgb(208, 202, 202);
+
+}
+
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 25%;
+
+}
+
+
+
+.regis {
+    background-color: rgb(147, 15, 134);
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    box-shadow: 0px 0px 80px rgb(147, 15, 134);
+
+}
+
+
+h2, .inforeg {
+    margin-top: 70px;
+    width: 650px;
+    line-height: 1.0;
+    font-size: large;
+    font-family: inter;
+}
+
+
+.inforeg {
+    margin-top: 30px;
+    width: 75%;
+    font-size: larger;
+    font-family: inter;
+}
+
+.registration {
+    height: 40px;
+    width: 270px;
+    color: black;
+    background-color: pink;
+    border-radius: 12px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    box-shadow: 0px 0px 80px rgb(147, 15, 134);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(10% * 8);
+}
+
+.slide {
+    min-width: calc(100% / 2);
+    box-sizing: border-box;
+}
+
+.prev, .next {
+    background-color: rgb(57, 57, 57);
+    color: rgb(147, 15, 134);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    margin: 40px;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    .slider-wrapper {
+        flex-direction: column;
+    }
+
+    .slider {
+        width: 90%;
+    }
+
+    .slides {
+        width: calc(100% * 6);
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    button {
+        margin: 5px;
+        padding: 8px;
+    }
+
+    button.prev {
+        margin-top: 10px;
+    }
+
+    button.next {
+        margin-bottom: 10px;
+    }
+}
+
+
+.supporters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 300px;
+    margin-top: 100px;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+    gap: 200px;
+}
+
+.supporters img {
+    height: 150px;
+    width: 800px;
+}
+
+
+.regtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 100px;
+    margin-top: 100px;
+
+    color: white;
+    font-size: large;
+    font-family: monospace;
+}
+
+
+.blankfill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background-color: rgb(48, 48, 48);
+    height: 100px;
+    margin-top: 40px;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+}
+
+
+.someinfo {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-right: 500px;
+    float: top;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: rgb(147, 15, 134);
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+}
+
+
+.registration-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.registration-form input {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    background-color: pink;
+    box-sizing: border-box;
+}
+
+.comments {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 160px;
+    border-radius: 40px;
+    background-color: pink;
+    margin-top: 30px;
+}
+
+.comments input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.regiss {
+    color: black;
+    background-color: pink;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 30%;
+    padding: 8px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+
+
+.program {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 100px;
+    margin-top: 100px;
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.empty {
+    height: 150px;
+}
+
+.program-info {
+    height: 450px;
+    color: rgb(201, 200, 200);
+    font-size: large;
+    background-color: rgb(147, 15, 134);
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    padding-left: 50px;
+    padding-top: 30px;
+
+}
+
+.advisory {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.pastevent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 100px;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+}
+
+
+.pastpics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: rgb(147, 15, 134);
+}
+
+.pastpics img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.findus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 100px;
+    color: white;
+    font-size: large;
+    font-family: monospace;
+}
+
+
+.map {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 100px rgb(147, 15, 134);
+    background: linear-gradient(rgb(147, 15, 134), #4e053d);
+    height: 650px;
+    color: white;
+
+}
+
+.location img {
+    width: 55%;
+    margin-top: 10px;
+}
+
+
+.rights {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-message, .error-message {
+    width: 300px;
+    margin: 3rem auto 0;
+    text-align: center;
+    color: green;
+    background-color: pink;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 1px solid green;
+    border-radius: 4px;
+    display: none;
+}
+
+.error-message {
+    outline: 1px solid red;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+
+@media (max-width: 1024px) {
+    .navigation-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header, .navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bar {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 10px;
+    }
+
+    .timer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .timer #timer {
+        font-size: 36px;
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+
+    .circle img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .introduction, .regis, .supporters, .regtitle, .blankfill, .someinfo, .program, .program-info, .advisory, .pastevent, .findus, .map {
+        padding: 20px;
+        margin-top: 20px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .registration-form input, .comments, .regiss, .slider, .slide {
+        width: 100%;
+    }
+
+    .registration-form input {
+        width: 90%;
+    }
+
+    .comments {
+        width: 90%;
+    }
+
+    .regiss {
+        width: 90%;
+    }
+
+    .supporters {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pastpics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .navigation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bar {
+        width: 100%;
+        margin-right: 0;
+        padding-right: 10px;
+    }
+
+    .timer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .timer #timer {
+        font-size: 28px;
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+
+    .circle img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introduction, .regis, .supporters, .regtitle, .blankfill, .someinfo, .program, .program-info, .advisory, .pastevent, .findus, .map {
+        padding: 10px;
+        margin-top: 10px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .registration-form input, .comments, .regiss, .slider, .slide {
+        width: 100%;
+    }
+
+    .registration-form input {
+        width: 90%;
+    }
+
+    .comments {
+        width: 90%;
+    }
+
+    .regiss {
+        width: 90%;
+    }
+
+    .supporters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pastpics {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
